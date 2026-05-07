@@ -56,9 +56,9 @@ const WorldClockHorizontal = () => {
   return (
     <Box
       sx={{
-        display: "grid",
+        display: "flex",
         alignItems: "center",
-        gridTemplateColumns: "repeat(3,1fr)",
+        justifyContent: "space-around",
         gap: "1vw",
         width: "100%",
       }}

@@ -181,10 +181,10 @@ const SpotRate = () => {
       <Box
         sx={{
           border: "0.1vw solid #ffffff4a",
-          borderRadius: "1vw",
+          borderRadius: "1.5vw",
           backdropFilter: "blur(0.2vw)",
           background: "hsla(0, 0%, 0%, 0.40)",
-          padding: { xs: " 2vw 3vw", sm: " 0.5vw 2vw", md: "1vw 1vw" },
+          padding: { xs: " 2vw 3vw", sm: " 0.5vw 2vw", md: "1.5vw 1vw" },
           display: "grid",
           alignItems: "center",
           gap: "1vw",
