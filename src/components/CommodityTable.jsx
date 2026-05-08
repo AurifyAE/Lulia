@@ -56,8 +56,6 @@ const CommodityTable = ({ title, items }) => {
     items
       ?.map((item) => {
         const spot = getSpot(item.metal);
-console.log('sadfsfsdfdsfsdfs',item);
-
         // 🔥 IMPORTANT: fallback to goldData
         const effectiveSpot = spot || goldData;
         if (!effectiveSpot) return null;
