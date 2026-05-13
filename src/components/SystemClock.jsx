@@ -72,7 +72,7 @@ const SystemClock = () => {
             },
             fontWeight: 400,
             letterSpacing: "2px",
-            color: "#FFFFFF",
+            color: "#000",
           }}
         >
           {timeData.date || "-- --- ----"}
@@ -84,7 +84,7 @@ const SystemClock = () => {
               xs: "12px",
               sm: "1vw",
             },
-            color: "#fff",
+            color: "#000",
             letterSpacing: "2px",
           }}
         >
