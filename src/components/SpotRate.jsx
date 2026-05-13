@@ -80,7 +80,7 @@ const SpotRate = () => {
   const getColors = (dir) => {
     if (dir === "rise")
       return {
-        bgColor: "#008f0c",
+        bgColor: "#4dbf00",
         border: "1px solid #008f0c",
         color: "white",
       };
@@ -244,7 +244,7 @@ const SpotRate = () => {
           }}
         >
           <PricePulse label="BID" value={data.bid} dir={bidDir} />
-          LOW <span className="hl-value-low text-[#bf0000]">{data.low}</span>
+          LOW <span className="hl-value-low text-[#FF0040]">{data.low}</span>
         </Box>
 
         {/* Price Boxes */}
