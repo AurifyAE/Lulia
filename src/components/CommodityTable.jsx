@@ -99,7 +99,25 @@ const CommodityTable = ({ title, items }) => {
 
     return () => window.removeEventListener("resize", checkWidth);
   }, []);
+  const PURITY_TO_KARAT = {
+    999: "24K",
+    995: "24K",
+    958: "23K",
+    916: "22K",
+    875: "21K",
+    833: "20K",
+    750: "18K",
+    708: "17K",
+    666: "16K",
+    585: "14K",
+    500: "12K",
+    417: "10K",
+    375: "9K",
+  };
 
+  const getPurityLabel = (purity) => {
+    return PURITY_TO_KARAT[purity] || purity;
+  };
   // ❌ No data → don't render section
   if (!rows.length) return null;
 
@@ -118,7 +136,6 @@ const CommodityTable = ({ title, items }) => {
 
           backdropFilter: "blur(0.3vw)",
           border: "0.1vw solid #ffffff68",
-
 
           margin: ".4vw",
         }}
@@ -276,7 +293,8 @@ const CommodityTable = ({ title, items }) => {
                         // mb:'-0.5vw'
                       }}
                     >
-                      {row.purity}
+                      {/* {row.purity} */}
+                      {getPurityLabel(row.purity)}
                     </Typography>
                   </Typography>
 
