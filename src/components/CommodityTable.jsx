@@ -100,41 +100,39 @@ const CommodityTable = ({ title, items }) => {
     return () => window.removeEventListener("resize", checkWidth);
   }, []);
 
-  
-
   const PURITY_TO_KARAT = {
-    9999: "24K",   // 99.99%
+    9999: "24K", // 99.99%
     999.9: "24K", // 99.99%
-    999: "24K",   // 99.9%
-    995: "24K",   // Swiss bullion / investment gold
-  
-    958: "23K",   // 95.8%
+    999: "24K", // 99.9%
+    995: "24K", // Swiss bullion / investment gold
+
+    958: "23K", // 95.8%
     950: "23K",
-  
-    920: "22K",   // Some regional jewellery standards
-    916: "22K",   // Standard 22K
+
+    920: "22K", // Some regional jewellery standards
+    916: "22K", // Standard 22K
     900: "21.6K",
-  
+
     875: "21K",
-  
+
     833: "20K",
-  
+
     750: "18K",
-  
+
     708: "17K",
-  
+
     700: "16.8K",
     666: "16K",
-  
+
     625: "15K",
-  
-    585: "14K",   // Standard 14K
-    583: "14K",   // Russian standard
-  
+
+    585: "14K", // Standard 14K
+    583: "14K", // Russian standard
+
     500: "12K",
-  
+
     417: "10K",
-  
+
     375: "9K",
   };
 
@@ -293,9 +291,12 @@ const CommodityTable = ({ title, items }) => {
                       },
                       fontWeight: 800,
                       color: "#fff",
-                      display: "flex",
+                      display: "grid",
                       alignItems: "center ",
                       justifyContent: "start",
+                      gridTemplateColumns: "auto auto",
+                      textAlign: "start",
+                      lineHeight: "1",
                       gap: {
                         xs: "7px",
                         lg: "0.3vw",
