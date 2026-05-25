@@ -318,7 +318,9 @@ const CommodityTable = ({ title, items }) => {
                       }}
                     >
                       {/* {row.purity} */}
-                      {getPurityLabel(row.purity)}
+                      {row.metal == "Silver"
+                        ? row.purity
+                        : getPurityLabel(row.purity)}
                     </Typography>
                   </Typography>
 
